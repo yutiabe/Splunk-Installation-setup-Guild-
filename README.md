@@ -33,7 +33,7 @@ communication between Splunk components
 - Heads
 - Indexers
 - Forwarders.
-9997/tcp: The default port for receiving data from Splunk universal forwarders. 
+# 9997/tcp: The default port for receiving data from Splunk universal forwarders. 
 You must add these ports to the public firewall zone. The --permanent flag ensures the rule persists after a server reboot.
 # Open the Splunk Web port
 sudo firewall-cmd --zone=public --add-port=8000/tcp --permanent
