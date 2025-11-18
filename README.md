@@ -43,8 +43,8 @@ sudo firewall-cmd --zone=public --add-port=8089/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=9997/tcp –permanent
 Reload the firewall
 #sudo firewall-cmd --reload
-Go to your web browser 
-#  open a new tap  
+
+#  Go to your web browser open a new tap  
 Enter the ip address ( 10.0.0.25:8000) and press Enter to Load up your splunk dashboard
 ---------------------------------------------------------------------------------------
 # Dashboard 
