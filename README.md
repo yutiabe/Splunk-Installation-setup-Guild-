@@ -21,14 +21,18 @@ NB provide passswd for slunk user and also a new username and passwd for admin a
 Change permission for splunk user 
 # sudo chown -R splunk:splunk /opt/splunk
 # If you encounter any issue and want to change anything, Make sure to stop splunk services before making the change
-sudo /opt/splunk/bin/splunk stop
-sudo systemctl start Splunkd
-sudo /opt/splunk/bin/splunk enable boot-start -systemd-managed 1 -user splunk
-Check the firewall status
-sudo systemctl status firewalld
+sudo /opt/splunk/bin/splunk stop.
+sudo systemctl start Splunkd.
+sudo /opt/splunk/bin/splunk enable boot-start -systemd-managed 1 -user splunk.
+# Check the firewall status
+# sudo systemctl status firewalld
 The most common Splunk ports are:
 8000/tcp: The default port for the Splunk Web interface.
-communication between Splunk components (e.g., search heads, indexers, and forwarders).
+communication between Splunk components
+- Search
+- Heads
+- Indexers
+- Forwarders.
 9997/tcp: The default port for receiving data from Splunk universal forwarders. 
 You must add these ports to the public firewall zone. The --permanent flag ensures the rule persists after a server reboot.
 # Open the Splunk Web port
