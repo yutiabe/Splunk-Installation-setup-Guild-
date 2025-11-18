@@ -45,9 +45,9 @@ Reload the firewall
 #sudo firewall-cmd --reload
 
 #  Go to your web browser open a new tap  
-Enter the ip address ( 10.0.0.25:8000) and press Enter to Load up your splunk dashboard
+Enter your splunk ip address with the default port number of  8000 ( Mine is = 10.0.0.25:8000  ) and press Enter to Load up your splunk dashboard
 ---------------------------------------------------------------------------------------
-# Dashboard 
+
 <img width="975" height="311" alt="image" src="https://github.com/user-attachments/assets/bea2dae8-cf00-4024-a1a6-1131ab1f0b87" />
 
 
